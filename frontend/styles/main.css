@@ -1,0 +1,130 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+#game-canvas {
+    border: 2px solid #4a4a4a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#menu {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(18, 18, 18, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #bb86fc;
+    text-shadow: 0 0 10px rgba(187, 134, 252, 0.5);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3700b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #bb86fc;
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.5);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#start-game {
+    background-color: #03dac6;
+    color: #000000;
+}
+
+#start-game:hover {
+    background-color: #018786;
+    color: #ffffff;
+}
+
+/* 排行榜样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+th {
+    background-color: #3700b3;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tr:hover {
+    background-color: rgba(187, 134, 252, 0.1);
+}
+
+/* ... 其他样式保持不变 ... */
+
+.game-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #cf6679;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.game-button:hover {
+    background-color: #a00037;
+}
+
+#exit-to-menu {
+    display: none; /* 初始状态下隐藏 */
+}
